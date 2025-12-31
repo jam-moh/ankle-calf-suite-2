@@ -3,174 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <title>Ankle & Calf Assessment App Suite</title>
+
 <style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 30px;
-    background: #e0f7f5;
-    color: #1f2937;
-  }
-  h1 {
-    text-align: center;
-    color: #1e40af;
-    margin-bottom: 20px;
-  }
-  .back-home {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 6px 12px;
-    background-color: #40e0d0;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-  .card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  .card-header {
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-  }
-  .card-content {
-    padding: 15px;
-    flex: 1;
-  }
-  .card img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-  .card a.button {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    padding: 8px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-  }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:30px;
+  background:#e0f7f5;
+  color:#1f2937;
+}
+h1{
+  text-align:center;
+  color:#1e40af;
+  margin-bottom:10px;
+}
+.subtitle{
+  text-align:center;
+  color:#374151;
+  margin-bottom:25px;
+  font-size:0.95rem;
+}
+.container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+.card-header{
+  padding:10px;
+  color:#fff;
+  font-weight:bold;
+}
+.card-content{
+  padding:15px;
+  flex:1;
+  text-align:center;
+}
+.card-content img{
+  width:140px;
+  margin:10px auto;
+}
+.button{
+  display:block;
+  margin-top:12px;
+  padding:8px;
+  background:#2563eb;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
 </style>
 </head>
+
 <body>
 
 <h1>Ankle & Calf Assessment App Suite</h1>
-<a href="https://jam-moh.github.io/Ankle-Measurement-Calculators/" class="back-home">← Back to Landing Page</a>
+<div class="subtitle">
+Clinical and performance calculators for ankle and calf strength, reliability, and meaningful change
+</div>
 
 <div class="container">
 
-<!-- Example Card: Repeat for each app with proper color and QR -->
 <div class="card">
-  <div class="card-header" style="background:#1e40af;">Ankle Plantar Flexion Strength Estimator (Empirical Model)</div>
-  <div class="card-content">
-    <img src="qr/qr_apfs-estimator.png" alt="QR Code">
-    <p>Predicts ankle plantar flexion strength for children, adults, and older adults based on field data.</p>
-    <a href="apfs-estimator/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#1e40af;">APFS Strength Estimator (Age-Specific)</div>
+<div class="card-content">
+<img src="qr/qr_apfs-estimator.png">
+<p>Predicts ankle plantar flexion strength across children, adults, and older adults.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/apfs-estimator/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#10b981;">Seated Calf Strength Estimator</div>
-  <div class="card-content">
-    <img src="qr/qr_seated-calf.png" alt="QR Code">
-    <p>Provides predicted seated calf strength values using linear mixed model based on measured PeakForce.</p>
-    <a href="seated-calf/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#10b981;">Seated Calf Strength Estimator</div>
+<div class="card-content">
+<img src="qr/qr_seated-calf.png">
+<p>Normative seated calf strength prediction using LMM-based modeling.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/seated-calf/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#f59e0b;">Coefficient of Variation</div>
-  <div class="card-content">
-    <img src="qr/qr_cv.png" alt="QR Code">
-    <p>Calculates CV (three methods), reliability metrics (r or ICC), SEM, MDC, and magnitude-based change interpretation.</p>
-    <a href="cv/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#f59e0b;">Coefficient of Variation</div>
+<div class="card-content">
+<img src="qr/qr_cv.png">
+<p>CV (3 methods), ICC/r, SEM, MDC, and magnitude-based interpretation.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/cv/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#ef4444;">SWC & TE Calculator</div>
-  <div class="card-content">
-    <img src="qr/qr_swc-te.png" alt="QR Code">
-    <p>Compute Smallest Worthwhile Change (SWC) and Typical Error (TE) for repeated measurements.</p>
-    <a href="te-cv-swc/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#ef4444;">SWC & Typical Error</div>
+<div class="card-content">
+<img src="qr/qr_swc-te.png">
+<p>Smallest Worthwhile Change and Typical Error from repeated trials.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/te-cv-swc/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#6366f1;">Smallest Worthwhile Change (SWC) Calculator</div>
-  <div class="card-content">
-    <img src="qr/qr_swc.png" alt="QR Code">
-    <p>Determines the SWC from trial data across subjects to assess meaningful change.</p>
-    <a href="swc/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#6366f1;">SWC Calculator</div>
+<div class="card-content">
+<img src="qr/qr_swc.png">
+<p>Between-subject SWC estimation for meaningful change analysis.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/swc/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#14b8a6;">Typical Error</div>
-  <div class="card-content">
-    <img src="qr/qr_te.png" alt="QR Code">
-    <p>Calculates the typical error of measurement from repeated trials.</p>
-    <a href="typical-error/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#14b8a6;">Typical Error</div>
+<div class="card-content">
+<img src="qr/qr_te.png">
+<p>Quantifies within-subject measurement noise.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/typical-error/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#f97316;">MDC Calculator</div>
-  <div class="card-content">
-    <img src="qr/qr_mdc.png" alt="QR Code">
-    <p>Computes Minimal Detectable Change (MDC) and MDC% for clinical interpretation.</p>
-    <a href="mdc/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#f97316;">MDC Calculator</div>
+<div class="card-content">
+<img src="qr/qr_mdc.png">
+<p>Minimal Detectable Change and MDC%.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/mdc/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#8b5cf6;">Predictive Ankle Torque</div>
-  <div class="card-content">
-    <img src="qr/qr_predictive-torque.png" alt="QR Code">
-    <p>Estimate ankle torque based on subject characteristics and lever arm input.</p>
-    <a href="predictive-ankle-torque-calculator/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#8b5cf6;">Predictive Ankle Torque</div>
+<div class="card-content">
+<img src="qr/qr_predictive-torque.png">
+<p>Predicts ankle torque using anthropometrics.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/predictive-ankle-torque-calculator/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#eab308;">Normative APFS</div>
-  <div class="card-content">
-    <img src="qr/qr_norm-apfs.png" alt="QR Code">
-    <p>Provides normative ankle plantar flexion strength reference values for comparison.</p>
-    <a href="norm-apfs/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#eab308;">Normative APFS</div>
+<div class="card-content">
+<img src="qr/qr_norm-apfs.png">
+<p>Normative plantar flexion strength references.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/norm-apfs/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#ec4899;">Bland-Altman Plot</div>
-  <div class="card-content">
-    <img src="qr/qr_bland-altman.png" alt="QR Code">
-    <p>Visualizes agreement between two measurement methods using Bland-Altman analysis.</p>
-    <a href="bland-altman/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#ec4899;">Bland–Altman</div>
+<div class="card-content">
+<img src="qr/qr_bland-altman.png">
+<p>Agreement analysis between two measurements.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/bland-altman/index.html">Open App</a>
+</div>
 </div>
 
 <div class="card">
-  <div class="card-header" style="background:#22c55e;">Torque Calculator</div>
-  <div class="card-content">
-    <img src="qr/qr_torque.png" alt="QR Code">
-    <p>Calculate torque from force and lever arm inputs for ankle or other joints.</p>
-    <a href="torque/index.html" class="button">Open App</a>
-  </div>
+<div class="card-header" style="background:#22c55e;">Torque Calculator</div>
+<div class="card-content">
+<img src="qr/qr_torque.png">
+<p>Force × moment arm torque calculator.</p>
+<a class="button" href="https://jam-moh.github.io/Ankle-Measurement-Calculators/torque/index.html">Open App</a>
+</div>
 </div>
 
 </div>
